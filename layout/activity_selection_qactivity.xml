@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demoTest.selectionQActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/crcTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#B323283A"
+            android:fontFamily="@font/aclonica"
+            android:text="Set up the Test"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="3dp"
+            android:text="Manual Choosing of Test. Select the Number of MCQ's , Mark for each MCQ and the time to complete the test"
+            android:textColor="#B323283A"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#8AE2E8FB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#8AE2E8FB"
+            >
+            <TextView
+                android:id="@+id/result2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Number of MCQS"
+                android:textSize="22dp" />
+
+            <NumberPicker
+                android:id="@+id/quesPicker"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#8AE2E8FB"
+            >
+            <TextView
+                android:id="@+id/permcq"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Mark per MCQ"
+                android:textSize="22dp" />
+
+            <NumberPicker
+                android:id="@+id/markPicker"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#8AE2E8FB"
+            >
+            <TextView
+                android:id="@+id/Timeselect"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Time for MCQS"
+                android:textSize="22dp" />
+
+            <NumberPicker
+                android:id="@+id/TimePicker"
+                android:layout_gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:padding="2dp"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/calculate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="15dp"
+              android:layout_marginLeft="15dp"
+              android:layout_weight="1"
+              android:background="@drawable/btn_style3"
+              android:textStyle="bold"
+              android:textColor="#fff"
+              android:text="Calculate"
+              android:fontFamily="@font/aclonica"
+              android:textSize="17dp" />
+          <TextView
+              android:id="@+id/TotalTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="invisible"
+              android:textColor="#B31F2849"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_weight="1"
+              android:fontFamily="@font/aclonica"
+              android:textSize="20dp"
+              android:textStyle="bold"/>
+          <Button
+              android:id="@+id/proceed"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="invisible"
+              android:layout_weight="1"
+              android:padding="15dp"
+              android:background="@drawable/btn_style3"
+              android:textStyle="bold"
+              android:textColor="#fff"
+              android:layout_marginRight="20dp"
+              android:text="Proceed"
+              android:layout_alignParentRight="true"
+              android:fontFamily="@font/aclonica"
+              android:textSize="17dp" />
+
+
+      </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

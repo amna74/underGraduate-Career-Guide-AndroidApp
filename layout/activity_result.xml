@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".demoTest.ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side_nav_bar"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/crcTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#B323283A"
+            android:fontFamily="@font/aclonica"
+            android:text="Progress Report"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+
+        android:elevation="20dp"
+        app:cardBackgroundColor="#F3EFEF"
+        android:padding="3dp"
+        app:cardCornerRadius="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+                />
+
+
+            <TextView
+                android:id="@+id/TestType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+                />
+
+
+            <TextView
+                android:id="@+id/correctans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+              />
+
+
+            <TextView
+                android:id="@+id/wrongans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+             />
+
+
+
+
+            <TextView
+                android:id="@+id/markshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+            />
+
+            <TextView
+                android:id="@+id/totalmarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+               />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"/>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/finalm4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/white"
+        android:text="DONE"
+        android:layout_marginTop="24dp"
+        android:padding="6dp"
+        android:layout_gravity="center"
+       />
+
+
+
+
+</LinearLayout>
